@@ -1,0 +1,5 @@
+C:/Users/bogom/source/repos/cpp_2k/out/build/x64-debug/CMakeFiles/edit_cache.dir
+C:/Users/bogom/source/repos/cpp_2k/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/bogom/source/repos/cpp_2k/out/build/x64-debug/calculator/CMakeFiles/calculator.dir
+C:/Users/bogom/source/repos/cpp_2k/out/build/x64-debug/calculator/CMakeFiles/edit_cache.dir
+C:/Users/bogom/source/repos/cpp_2k/out/build/x64-debug/calculator/CMakeFiles/rebuild_cache.dir
