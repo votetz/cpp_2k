@@ -13,3 +13,4 @@ project ("cpp_2k")
 
 # Включите подпроекты.
 add_subdirectory ("calculator")
+add_subdirectory ("sizing")

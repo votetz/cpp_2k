@@ -35,6 +35,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("C:/Users/bogom/source/repos/cpp_2k/out/build/x64-debug/calculator/cmake_install.cmake")
+  include("C:/Users/bogom/source/repos/cpp_2k/out/build/x64-debug/sizing/cmake_install.cmake")
 
 endif()
 

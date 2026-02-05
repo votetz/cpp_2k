@@ -3,3 +3,6 @@ C:/Users/bogom/source/repos/cpp_2k/out/build/x64-debug/CMakeFiles/rebuild_cache.
 C:/Users/bogom/source/repos/cpp_2k/out/build/x64-debug/calculator/CMakeFiles/calculator.dir
 C:/Users/bogom/source/repos/cpp_2k/out/build/x64-debug/calculator/CMakeFiles/edit_cache.dir
 C:/Users/bogom/source/repos/cpp_2k/out/build/x64-debug/calculator/CMakeFiles/rebuild_cache.dir
+C:/Users/bogom/source/repos/cpp_2k/out/build/x64-debug/sizing/CMakeFiles/sizing.dir
+C:/Users/bogom/source/repos/cpp_2k/out/build/x64-debug/sizing/CMakeFiles/edit_cache.dir
+C:/Users/bogom/source/repos/cpp_2k/out/build/x64-debug/sizing/CMakeFiles/rebuild_cache.dir

@@ -15,8 +15,9 @@
     "",
     "\\calculator",
     "\\calculator\\include",
-    "\\calculator\\src"
+    "\\calculator\\src",
+    "\\sizing",
+    "\\sizing\\src"
   ],
-  "SelectedNode": "\\calculator\\src\\cpp_2k.cpp",
   "PreviewInSolutionExplorer": false
 }

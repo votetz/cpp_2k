@@ -1,5 +1,14 @@
 # ninja log v6
-5	636	7918427298720092	calculator/CMakeFiles/calculator.dir/src/cpp_2k.cpp.obj	7aa50db9b7560389
-638	1070	7918427305037540	calculator/calculator.exe	dc5a4330fc0f3221
+40	56	7920108307236313	clean	3807ae1e948da024
 5	743	7918428739820275	calculator/CMakeFiles/calculator.dir/src/cpp_2k.cpp.obj	7aa50db9b7560389
 745	948	7918428747236293	calculator/calculator.exe	dc5a4330fc0f3221
+88	1215	7920108332956563	build.ninja	33b78a8521934960
+54	330	7920108332956563	build.ninja	33b78a8521934960
+25	805	7920108334838985	calculator/CMakeFiles/calculator.dir/src/cpp_2k.cpp.obj	7aa50db9b7560389
+43	58	7920108647511344	clean	3807ae1e948da024
+27	486	7920108648060669	calculator/CMakeFiles/calculator.dir/src/cpp_2k.cpp.obj	7aa50db9b7560389
+69	329	7920108962460445	calculator/calculator.exe	dc5a4330fc0f3221
+59	700	7920108962356832	sizing/CMakeFiles/sizing.dir/src/sz.cpp.obj	a13377caf19dac3e
+701	1047	7920108968774394	sizing/sizing.exe	fc232d56ad73cd44
+5	794	7920125618000724	sizing/CMakeFiles/sizing.dir/src/sz.cpp.obj	a13377caf19dac3e
+794	944	7920125625865958	sizing/sizing.exe	fc232d56ad73cd44
