@@ -823,7 +823,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "12"
+			"value" : "13"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1668,6 +1668,42 @@
 			],
 			"type" : "STATIC",
 			"value" : "C:/Users/Admin/CLionProjects/cpp_2k/projects/string_check"
+		},
+		{
+			"name" : "tabulate_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/tabulate"
+		},
+		{
+			"name" : "tabulate_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "OFF"
+		},
+		{
+			"name" : "tabulate_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/Admin/CLionProjects/cpp_2k/projects/tabulate"
 		}
 	],
 	"kind" : "cache",

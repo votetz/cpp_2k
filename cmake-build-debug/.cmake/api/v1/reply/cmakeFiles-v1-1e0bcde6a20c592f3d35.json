@@ -243,6 +243,9 @@
 			"path" : "projects/func_series/CMakeLists.txt"
 		},
 		{
+			"path" : "projects/tabulate/CMakeLists.txt"
+		},
+		{
 			"path" : "libs/CMakeLists.txt"
 		},
 		{

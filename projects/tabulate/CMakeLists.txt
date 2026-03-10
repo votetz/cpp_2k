@@ -1,4 +1,4 @@
-﻿project(func_series)
+﻿project(tabulate)
 
 cmake_minimum_required(VERSION 3.10)
 set(CMAKE_CXX_STANDARD 17)
@@ -8,5 +8,5 @@ file(GLOB SRC src/*.cpp src/*.cxx)
 include_directories(include)
 
 add_executable(${PROJECT_NAME} ${SRC}
-        ../tabulate/src/tabulate.cpp
-        ../tabulate/include/tabulate.hpp)
+        src/app.cpp
+)
