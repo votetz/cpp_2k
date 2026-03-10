@@ -1,0 +1,18 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/cmake_install.cmake",
+		"C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/cmake_install.cmake",
+		"C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/calculator/cmake_install.cmake",
+		"C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/sizing/cmake_install.cmake",
+		"C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/string_check/cmake_install.cmake",
+		"C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/random_fill/cmake_install.cmake",
+		"C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/random_fill/array_random/cmake_install.cmake",
+		"C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/random_fill/struct_random/cmake_install.cmake",
+		"C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/complex_app/cmake_install.cmake",
+		"C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/func_series/cmake_install.cmake",
+		"C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/libs/cmake_install.cmake",
+		"C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/libs/complex/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

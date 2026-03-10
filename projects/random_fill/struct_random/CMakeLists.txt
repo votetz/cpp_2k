@@ -1,5 +1,5 @@
 ﻿cmake_minimum_required(VERSION 3.15)
-project(ramdom_fill)
+project(random_fill)
 
 add_executable(struct_random src/struct_random.cpp)
 
