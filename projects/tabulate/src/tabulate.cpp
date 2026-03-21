@@ -1,6 +1,4 @@
 #include "../include/tabulate.hpp"
-#include <iomanip>
-#include <cmath>
 
 using namespace std;
 
@@ -80,7 +78,6 @@ void tabulate2D(double a, double b, double hx, double c, double d, double hy)
         }
         cout << "\n";
     }
-
     cout << "\nMinimum: " << min_val << "\n";
     cout << "Maximum: " << max_val << "\n";
 }

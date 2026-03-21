@@ -294,13 +294,22 @@ cpp_2k_IS_TOP_LEVEL:STATIC=ON
 cpp_2k_SOURCE_DIR:STATIC=C:/Users/Admin/CLionProjects/cpp_2k
 
 //Value Computed by CMake
-func_series_BINARY_DIR:STATIC=C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/func_series
+func_example_BINARY_DIR:STATIC=C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/func_series
+
+//Value Computed by CMake
+func_example_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+func_example_SOURCE_DIR:STATIC=C:/Users/Admin/CLionProjects/cpp_2k/projects/func_series
+
+//Value Computed by CMake
+func_series_BINARY_DIR:STATIC=C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/template_utils
 
 //Value Computed by CMake
 func_series_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-func_series_SOURCE_DIR:STATIC=C:/Users/Admin/CLionProjects/cpp_2k/projects/func_series
+func_series_SOURCE_DIR:STATIC=C:/Users/Admin/CLionProjects/cpp_2k/projects/template_utils
 
 //Value Computed by CMake
 ramdom_fill_BINARY_DIR:STATIC=C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/random_fill/array_random
@@ -346,6 +355,15 @@ tabulate_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 tabulate_SOURCE_DIR:STATIC=C:/Users/Admin/CLionProjects/cpp_2k/projects/tabulate
+
+//Value Computed by CMake
+template_utils_BINARY_DIR:STATIC=C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/template_utils
+
+//Value Computed by CMake
+template_utils_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+template_utils_SOURCE_DIR:STATIC=C:/Users/Admin/CLionProjects/cpp_2k/projects/template_utils
 
 
 ########################

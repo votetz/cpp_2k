@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "C:/Users/Admin/CLionProjects/cpp_2k/dist/bin/Windows/AMD64/func_series.exe"
+			"path" : "C:/Users/Admin/CLionProjects/cpp_2k/dist/bin/Windows/AMD64/complex_app.exe"
 		},
 		{
-			"path" : "C:/Users/Admin/CLionProjects/cpp_2k/dist/bin/Windows/AMD64/func_series.pdb"
+			"path" : "C:/Users/Admin/CLionProjects/cpp_2k/dist/bin/Windows/AMD64/complex_app.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -14,11 +14,12 @@
 		"commands" : 
 		[
 			"add_executable",
+			"target_link_libraries",
 			"include_directories"
 		],
 		"files" : 
 		[
-			"projects/func_series/CMakeLists.txt"
+			"projects/complex_app/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -28,13 +29,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 10,
+				"line" : 7,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 8,
+				"line" : 11,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 5,
 				"parent" : 0
 			}
 		]
@@ -45,14 +52,18 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++17 -fdiagnostics-color=always"
+					"fragment" : "-g -std=gnu++20 -fdiagnostics-color=always"
 				}
 			],
 			"includes" : 
 			[
 				{
+					"backtrace" : 3,
+					"path" : "C:/Users/Admin/CLionProjects/cpp_2k/projects/complex_app/include"
+				},
+				{
 					"backtrace" : 2,
-					"path" : "C:/Users/Admin/CLionProjects/cpp_2k/projects/func_series/include"
+					"path" : "C:/Users/Admin/CLionProjects/cpp_2k/libs/complex/include"
 				}
 			],
 			"language" : "CXX",
@@ -62,7 +73,7 @@
 				[
 					1
 				],
-				"standard" : "17"
+				"standard" : "20"
 			},
 			"sourceIndexes" : 
 			[
@@ -71,7 +82,14 @@
 			]
 		}
 	],
-	"id" : "func_series::@a905594af7dc4b8e4b6a",
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "complex::@5241b26ba5d33fec9b54"
+		}
+	],
+	"id" : "complex_app::@113b878ab1af3ca9adec",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -81,18 +99,23 @@
 				"role" : "flags"
 			},
 			{
+				"backtrace" : 2,
+				"fragment" : "C:\\Users\\Admin\\CLionProjects\\cpp_2k\\dist\\lib\\Windows\\AMD64\\libcomplex.a",
+				"role" : "libraries"
+			},
+			{
 				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
 				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "func_series",
-	"nameOnDisk" : "func_series.exe",
+	"name" : "complex_app",
+	"nameOnDisk" : "complex_app.exe",
 	"paths" : 
 	{
-		"build" : "projects/func_series",
-		"source" : "projects/func_series"
+		"build" : "projects/complex_app",
+		"source" : "projects/complex_app"
 	},
 	"sourceGroups" : 
 	[
@@ -117,18 +140,18 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "projects/func_series/src/func_series.cpp",
+			"path" : "projects/complex_app/src/complex.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "projects/tabulate/src/tabulate.cpp",
+			"path" : "projects/template_utils/src/template_example.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "projects/tabulate/include/tabulate.hpp",
+			"path" : "projects/template_utils/include/template_example.hpp",
 			"sourceGroupIndex" : 1
 		}
 	],

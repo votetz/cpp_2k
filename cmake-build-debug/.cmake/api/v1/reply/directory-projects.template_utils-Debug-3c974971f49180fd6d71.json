@@ -8,7 +8,7 @@
 	"installers" : [],
 	"paths" : 
 	{
-		"build" : "projects/func_series",
-		"source" : "projects/func_series"
+		"build" : "projects/template_utils",
+		"source" : "projects/template_utils"
 	}
 }

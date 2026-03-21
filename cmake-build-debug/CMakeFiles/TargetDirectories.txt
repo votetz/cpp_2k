@@ -22,9 +22,9 @@ C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/random_fill/struc
 C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/complex_app/CMakeFiles/complex_app.dir
 C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/complex_app/CMakeFiles/edit_cache.dir
 C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/complex_app/CMakeFiles/rebuild_cache.dir
-C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/func_series/CMakeFiles/func_series.dir
-C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/func_series/CMakeFiles/edit_cache.dir
-C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/func_series/CMakeFiles/rebuild_cache.dir
+C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/template_utils/CMakeFiles/template_utils.dir
+C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/template_utils/CMakeFiles/edit_cache.dir
+C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/template_utils/CMakeFiles/rebuild_cache.dir
 C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/tabulate/CMakeFiles/tabulate.dir
 C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/tabulate/CMakeFiles/edit_cache.dir
 C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/tabulate/CMakeFiles/rebuild_cache.dir

@@ -240,7 +240,7 @@
 			"path" : "projects/complex_app/CMakeLists.txt"
 		},
 		{
-			"path" : "projects/func_series/CMakeLists.txt"
+			"path" : "projects/template_utils/CMakeLists.txt"
 		},
 		{
 			"path" : "projects/tabulate/CMakeLists.txt"

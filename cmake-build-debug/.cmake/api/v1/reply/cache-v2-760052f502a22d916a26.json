@@ -1490,7 +1490,7 @@
 			"value" : "C:/Users/Admin/CLionProjects/cpp_2k"
 		},
 		{
-			"name" : "func_series_BINARY_DIR",
+			"name" : "func_example_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1500,6 +1500,42 @@
 			],
 			"type" : "STATIC",
 			"value" : "C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/func_series"
+		},
+		{
+			"name" : "func_example_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "OFF"
+		},
+		{
+			"name" : "func_example_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/Admin/CLionProjects/cpp_2k/projects/func_series"
+		},
+		{
+			"name" : "func_series_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/template_utils"
 		},
 		{
 			"name" : "func_series_IS_TOP_LEVEL",
@@ -1523,7 +1559,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Admin/CLionProjects/cpp_2k/projects/func_series"
+			"value" : "C:/Users/Admin/CLionProjects/cpp_2k/projects/template_utils"
 		},
 		{
 			"name" : "ramdom_fill_BINARY_DIR",
@@ -1704,6 +1740,42 @@
 			],
 			"type" : "STATIC",
 			"value" : "C:/Users/Admin/CLionProjects/cpp_2k/projects/tabulate"
+		},
+		{
+			"name" : "template_utils_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/template_utils"
+		},
+		{
+			"name" : "template_utils_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "OFF"
+		},
+		{
+			"name" : "template_utils_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/Admin/CLionProjects/cpp_2k/projects/template_utils"
 		}
 	],
 	"kind" : "cache",

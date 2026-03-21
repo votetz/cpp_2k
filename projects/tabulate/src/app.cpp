@@ -1,5 +1,3 @@
-#include <iostream>
-#include <iomanip>
 #include "../include/tabulate.hpp"
 
 using namespace std;

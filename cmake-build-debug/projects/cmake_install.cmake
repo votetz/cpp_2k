@@ -64,7 +64,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/func_series/cmake_install.cmake")
+  include("C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/template_utils/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
