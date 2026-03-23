@@ -691,6 +691,14 @@ build projects/entity_model/CMakeFiles/entity_model.dir/src/entity_model.cpp.obj
   OBJECT_DIR = projects\entity_model\CMakeFiles\entity_model.dir
   OBJECT_FILE_DIR = projects\entity_model\CMakeFiles\entity_model.dir\src
 
+build projects/entity_model/CMakeFiles/entity_model.dir/__/bits/src/main.cpp.obj: CXX_COMPILER__entity_model_unscanned_Debug C$:/Users/Admin/CLionProjects/cpp_2k/projects/bits/src/main.cpp || cmake_object_order_depends_target_entity_model
+  CONFIG = Debug
+  DEP_FILE = projects\entity_model\CMakeFiles\entity_model.dir\__\bits\src\main.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Admin/CLionProjects/cpp_2k/projects/entity_model/include
+  OBJECT_DIR = projects\entity_model\CMakeFiles\entity_model.dir
+  OBJECT_FILE_DIR = projects\entity_model\CMakeFiles\entity_model.dir\__\bits\src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target entity_model
@@ -699,7 +707,7 @@ build projects/entity_model/CMakeFiles/entity_model.dir/src/entity_model.cpp.obj
 #############################################
 # Link the executable C:\Users\Admin\CLionProjects\cpp_2k\projects\entity_model\dist\bin\Windows\AMD64\entity_model.exe
 
-build C$:/Users/Admin/CLionProjects/cpp_2k/projects/entity_model/dist/bin/Windows/AMD64/entity_model.exe: CXX_EXECUTABLE_LINKER__entity_model_Debug projects/entity_model/CMakeFiles/entity_model.dir/src/entity_model.cpp.obj
+build C$:/Users/Admin/CLionProjects/cpp_2k/projects/entity_model/dist/bin/Windows/AMD64/entity_model.exe: CXX_EXECUTABLE_LINKER__entity_model_Debug projects/entity_model/CMakeFiles/entity_model.dir/src/entity_model.cpp.obj projects/entity_model/CMakeFiles/entity_model.dir/__/bits/src/main.cpp.obj
   CONFIG = Debug
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32

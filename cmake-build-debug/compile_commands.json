@@ -85,6 +85,12 @@
 },
 {
   "directory": "C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -IC:/Users/Admin/CLionProjects/cpp_2k/projects/entity_model/include -g -std=gnu++20 -fdiagnostics-color=always -o projects\\entity_model\\CMakeFiles\\entity_model.dir\\__\\bits\\src\\main.cpp.obj -c C:\\Users\\Admin\\CLionProjects\\cpp_2k\\projects\\bits\\src\\main.cpp",
+  "file": "C:/Users/Admin/CLionProjects/cpp_2k/projects/bits/src/main.cpp",
+  "output": "C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/entity_model/CMakeFiles/entity_model.dir/__/bits/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug",
   "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -IC:/Users/Admin/CLionProjects/cpp_2k/libs/complex/include -g -std=gnu++20 -fdiagnostics-color=always -o libs\\complex\\CMakeFiles\\complex.dir\\src\\complex.cpp.obj -c C:\\Users\\Admin\\CLionProjects\\cpp_2k\\libs\\complex\\src\\complex.cpp",
   "file": "C:/Users/Admin/CLionProjects/cpp_2k/libs/complex/src/complex.cpp",
   "output": "C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/libs/complex/CMakeFiles/complex.dir/src/complex.cpp.obj"
