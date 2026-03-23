@@ -10,4 +10,6 @@ include_directories(include)
 add_executable(${PROJECT_NAME} ${SRC}
         src/app.cpp
         ../func_example/src/func_series.cpp
+        ../entity_model/src/entity_model.cpp
+        ../entity_model/include/entity_model.hpp
 )

@@ -823,7 +823,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "13"
+			"value" : "14"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1488,6 +1488,42 @@
 			],
 			"type" : "STATIC",
 			"value" : "C:/Users/Admin/CLionProjects/cpp_2k"
+		},
+		{
+			"name" : "entity_model_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/entity_model"
+		},
+		{
+			"name" : "entity_model_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "OFF"
+		},
+		{
+			"name" : "entity_model_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/Admin/CLionProjects/cpp_2k/projects/entity_model"
 		},
 		{
 			"name" : "func_example_BINARY_DIR",

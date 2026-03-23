@@ -619,6 +619,14 @@ build projects/tabulate/CMakeFiles/tabulate.dir/__/func_example/src/func_series.
   OBJECT_DIR = projects\tabulate\CMakeFiles\tabulate.dir
   OBJECT_FILE_DIR = projects\tabulate\CMakeFiles\tabulate.dir\__\func_example\src
 
+build projects/tabulate/CMakeFiles/tabulate.dir/__/entity_model/src/entity_model.cpp.obj: CXX_COMPILER__tabulate_unscanned_Debug C$:/Users/Admin/CLionProjects/cpp_2k/projects/entity_model/src/entity_model.cpp || cmake_object_order_depends_target_tabulate
+  CONFIG = Debug
+  DEP_FILE = projects\tabulate\CMakeFiles\tabulate.dir\__\entity_model\src\entity_model.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Admin/CLionProjects/cpp_2k/projects/tabulate/include
+  OBJECT_DIR = projects\tabulate\CMakeFiles\tabulate.dir
+  OBJECT_FILE_DIR = projects\tabulate\CMakeFiles\tabulate.dir\__\entity_model\src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target tabulate
@@ -627,7 +635,7 @@ build projects/tabulate/CMakeFiles/tabulate.dir/__/func_example/src/func_series.
 #############################################
 # Link the executable C:\Users\Admin\CLionProjects\cpp_2k\dist\bin\Windows\AMD64\tabulate.exe
 
-build C$:/Users/Admin/CLionProjects/cpp_2k/dist/bin/Windows/AMD64/tabulate.exe: CXX_EXECUTABLE_LINKER__tabulate_Debug projects/tabulate/CMakeFiles/tabulate.dir/src/app.cpp.obj projects/tabulate/CMakeFiles/tabulate.dir/src/tabulate.cpp.obj projects/tabulate/CMakeFiles/tabulate.dir/__/func_example/src/func_series.cpp.obj
+build C$:/Users/Admin/CLionProjects/cpp_2k/dist/bin/Windows/AMD64/tabulate.exe: CXX_EXECUTABLE_LINKER__tabulate_Debug projects/tabulate/CMakeFiles/tabulate.dir/src/app.cpp.obj projects/tabulate/CMakeFiles/tabulate.dir/src/tabulate.cpp.obj projects/tabulate/CMakeFiles/tabulate.dir/__/func_example/src/func_series.cpp.obj projects/tabulate/CMakeFiles/tabulate.dir/__/entity_model/src/entity_model.cpp.obj
   CONFIG = Debug
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
@@ -660,6 +668,70 @@ build projects/tabulate/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   restat = 1
 
 build projects/tabulate/rebuild_cache: phony projects/tabulate/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Admin/CLionProjects/cpp_2k/projects/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target entity_model
+
+
+#############################################
+# Order-only phony target for entity_model
+
+build cmake_object_order_depends_target_entity_model: phony || .
+
+build projects/entity_model/CMakeFiles/entity_model.dir/src/entity_model.cpp.obj: CXX_COMPILER__entity_model_unscanned_Debug C$:/Users/Admin/CLionProjects/cpp_2k/projects/entity_model/src/entity_model.cpp || cmake_object_order_depends_target_entity_model
+  CONFIG = Debug
+  DEP_FILE = projects\entity_model\CMakeFiles\entity_model.dir\src\entity_model.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Admin/CLionProjects/cpp_2k/projects/entity_model/include
+  OBJECT_DIR = projects\entity_model\CMakeFiles\entity_model.dir
+  OBJECT_FILE_DIR = projects\entity_model\CMakeFiles\entity_model.dir\src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target entity_model
+
+
+#############################################
+# Link the executable C:\Users\Admin\CLionProjects\cpp_2k\projects\entity_model\dist\bin\Windows\AMD64\entity_model.exe
+
+build C$:/Users/Admin/CLionProjects/cpp_2k/projects/entity_model/dist/bin/Windows/AMD64/entity_model.exe: CXX_EXECUTABLE_LINKER__entity_model_Debug projects/entity_model/CMakeFiles/entity_model.dir/src/entity_model.cpp.obj
+  CONFIG = Debug
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = projects\entity_model\CMakeFiles\entity_model.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = C:\Users\Admin\CLionProjects\cpp_2k\projects\entity_model\dist\bin\Windows\AMD64\entity_model.exe
+  TARGET_IMPLIB = C:\Users\Admin\CLionProjects\cpp_2k\dist\lib\Windows\AMD64\libentity_model.dll.a
+  TARGET_PDB = entity_model.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build projects/entity_model/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Admin\CLionProjects\cpp_2k\cmake-build-debug\projects\entity_model && "C:\Program Files\JetBrains\CLion 2025.3.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build projects/entity_model/edit_cache: phony projects/entity_model/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build projects/entity_model/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Admin\CLionProjects\cpp_2k\cmake-build-debug\projects\entity_model && "C:\Program Files\JetBrains\CLion 2025.3.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\Admin\CLionProjects\cpp_2k -BC:\Users\Admin\CLionProjects\cpp_2k\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build projects/entity_model/rebuild_cache: phony projects/entity_model/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -768,6 +840,10 @@ build complex_app: phony C$:/Users/Admin/CLionProjects/cpp_2k/dist/bin/Windows/A
 
 build complex_app.exe: phony C$:/Users/Admin/CLionProjects/cpp_2k/dist/bin/Windows/AMD64/complex_app.exe
 
+build entity_model: phony C$:/Users/Admin/CLionProjects/cpp_2k/projects/entity_model/dist/bin/Windows/AMD64/entity_model.exe
+
+build entity_model.exe: phony C$:/Users/Admin/CLionProjects/cpp_2k/projects/entity_model/dist/bin/Windows/AMD64/entity_model.exe
+
 build libcomplex.a: phony C$:/Users/Admin/CLionProjects/cpp_2k/dist/lib/Windows/AMD64/libcomplex.a
 
 build sizing: phony C$:/Users/Admin/CLionProjects/cpp_2k/dist/bin/Windows/AMD64/sizing.exe
@@ -819,7 +895,7 @@ build libs/complex/codegen: phony
 #############################################
 # Folder: C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects
 
-build projects/codegen: phony projects/calculator/codegen projects/sizing/codegen projects/string_check/codegen projects/random_fill/codegen projects/complex_app/codegen projects/template_utils/codegen projects/tabulate/codegen
+build projects/codegen: phony projects/calculator/codegen projects/sizing/codegen projects/string_check/codegen projects/random_fill/codegen projects/complex_app/codegen projects/template_utils/codegen projects/tabulate/codegen projects/entity_model/codegen
 
 # =============================================================================
 
@@ -834,6 +910,13 @@ build projects/calculator/codegen: phony
 # Folder: C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/complex_app
 
 build projects/complex_app/codegen: phony
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/entity_model
+
+build projects/entity_model/codegen: phony
 
 # =============================================================================
 
@@ -910,7 +993,7 @@ build libs/complex/all: phony C$:/Users/Admin/CLionProjects/cpp_2k/dist/lib/Wind
 #############################################
 # Folder: C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects
 
-build projects/all: phony projects/calculator/all projects/sizing/all projects/string_check/all projects/random_fill/all projects/complex_app/all projects/template_utils/all projects/tabulate/all
+build projects/all: phony projects/calculator/all projects/sizing/all projects/string_check/all projects/random_fill/all projects/complex_app/all projects/template_utils/all projects/tabulate/all projects/entity_model/all
 
 # =============================================================================
 
@@ -925,6 +1008,13 @@ build projects/calculator/all: phony C$:/Users/Admin/CLionProjects/cpp_2k/dist/b
 # Folder: C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/complex_app
 
 build projects/complex_app/all: phony C$:/Users/Admin/CLionProjects/cpp_2k/dist/bin/Windows/AMD64/complex_app.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/entity_model
+
+build projects/entity_model/all: phony C$:/Users/Admin/CLionProjects/cpp_2k/projects/entity_model/dist/bin/Windows/AMD64/entity_model.exe
 
 # =============================================================================
 
@@ -982,14 +1072,14 @@ build projects/template_utils/all: phony C$:/Users/Admin/CLionProjects/cpp_2k/di
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja C$:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/cmake_install.cmake C$:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/cmake_install.cmake C$:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/calculator/cmake_install.cmake C$:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/sizing/cmake_install.cmake C$:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/string_check/cmake_install.cmake C$:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/random_fill/cmake_install.cmake C$:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/random_fill/array_random/cmake_install.cmake C$:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/random_fill/struct_random/cmake_install.cmake C$:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/complex_app/cmake_install.cmake C$:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/template_utils/cmake_install.cmake C$:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/tabulate/cmake_install.cmake C$:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/libs/cmake_install.cmake C$:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/libs/complex/cmake_install.cmake: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Linker/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Linker/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Linker/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/WindowsPaths.cmake C$:/Users/Admin/CLionProjects/cpp_2k/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/libs/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/libs/complex/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/calculator/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/complex_app/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/random_fill/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/random_fill/array_random/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/random_fill/struct_random/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/sizing/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/string_check/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/tabulate/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/template_utils/CMakeLists.txt CMakeCache.txt CMakeFiles/4.1.2/CMakeCCompiler.cmake CMakeFiles/4.1.2/CMakeCXXCompiler.cmake CMakeFiles/4.1.2/CMakeRCCompiler.cmake CMakeFiles/4.1.2/CMakeSystem.cmake
+build build.ninja C$:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/cmake_install.cmake C$:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/cmake_install.cmake C$:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/calculator/cmake_install.cmake C$:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/sizing/cmake_install.cmake C$:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/string_check/cmake_install.cmake C$:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/random_fill/cmake_install.cmake C$:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/random_fill/array_random/cmake_install.cmake C$:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/random_fill/struct_random/cmake_install.cmake C$:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/complex_app/cmake_install.cmake C$:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/template_utils/cmake_install.cmake C$:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/tabulate/cmake_install.cmake C$:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/entity_model/cmake_install.cmake C$:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/libs/cmake_install.cmake C$:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/libs/complex/cmake_install.cmake: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Linker/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Linker/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Linker/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/WindowsPaths.cmake C$:/Users/Admin/CLionProjects/cpp_2k/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/libs/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/libs/complex/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/calculator/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/complex_app/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/entity_model/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/random_fill/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/random_fill/array_random/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/random_fill/struct_random/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/sizing/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/string_check/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/tabulate/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/template_utils/CMakeLists.txt CMakeCache.txt CMakeFiles/4.1.2/CMakeCCompiler.cmake CMakeFiles/4.1.2/CMakeCXXCompiler.cmake CMakeFiles/4.1.2/CMakeRCCompiler.cmake CMakeFiles/4.1.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Linker/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Linker/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Linker/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/WindowsPaths.cmake C$:/Users/Admin/CLionProjects/cpp_2k/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/libs/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/libs/complex/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/calculator/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/complex_app/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/random_fill/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/random_fill/array_random/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/random_fill/struct_random/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/sizing/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/string_check/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/tabulate/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/template_utils/CMakeLists.txt CMakeCache.txt CMakeFiles/4.1.2/CMakeCCompiler.cmake CMakeFiles/4.1.2/CMakeCXXCompiler.cmake CMakeFiles/4.1.2/CMakeRCCompiler.cmake CMakeFiles/4.1.2/CMakeSystem.cmake: phony
+build C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Linker/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Linker/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Linker/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.3.3/bin/cmake/win/x64/share/cmake-4.1/Modules/Platform/WindowsPaths.cmake C$:/Users/Admin/CLionProjects/cpp_2k/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/libs/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/libs/complex/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/calculator/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/complex_app/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/entity_model/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/random_fill/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/random_fill/array_random/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/random_fill/struct_random/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/sizing/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/string_check/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/tabulate/CMakeLists.txt C$:/Users/Admin/CLionProjects/cpp_2k/projects/template_utils/CMakeLists.txt CMakeCache.txt CMakeFiles/4.1.2/CMakeCCompiler.cmake CMakeFiles/4.1.2/CMakeCXXCompiler.cmake CMakeFiles/4.1.2/CMakeRCCompiler.cmake CMakeFiles/4.1.2/CMakeSystem.cmake: phony
 
 
 #############################################

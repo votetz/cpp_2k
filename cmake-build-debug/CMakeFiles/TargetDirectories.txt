@@ -28,6 +28,9 @@ C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/template_utils/CM
 C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/tabulate/CMakeFiles/tabulate.dir
 C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/tabulate/CMakeFiles/edit_cache.dir
 C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/tabulate/CMakeFiles/rebuild_cache.dir
+C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/entity_model/CMakeFiles/entity_model.dir
+C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/entity_model/CMakeFiles/edit_cache.dir
+C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/entity_model/CMakeFiles/rebuild_cache.dir
 C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/libs/CMakeFiles/edit_cache.dir
 C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/libs/CMakeFiles/rebuild_cache.dir
 C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/libs/complex/CMakeFiles/complex.dir

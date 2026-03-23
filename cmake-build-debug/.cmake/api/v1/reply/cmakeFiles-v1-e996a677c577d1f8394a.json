@@ -246,6 +246,9 @@
 			"path" : "projects/tabulate/CMakeLists.txt"
 		},
 		{
+			"path" : "projects/entity_model/CMakeLists.txt"
+		},
+		{
 			"path" : "libs/CMakeLists.txt"
 		},
 		{
