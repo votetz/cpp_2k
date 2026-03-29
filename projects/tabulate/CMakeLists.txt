@@ -12,4 +12,5 @@ add_executable(${PROJECT_NAME} ${SRC}
         ../func_example/src/func_series.cpp
         ../entity_model/src/entity_model.cpp
         ../entity_model/include/entity_model.hpp
+        ../zip_guard/src/main.cpp
 )

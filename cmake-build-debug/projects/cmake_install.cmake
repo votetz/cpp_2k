@@ -77,6 +77,16 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/entity_model/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/bits/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/zip_guard/cmake_install.cmake")
+endif()
+
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)

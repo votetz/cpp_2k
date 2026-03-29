@@ -3,8 +3,7 @@
 using namespace std;
 
 int main() {
-  steering_wheel myWheel;
-
+  SteeringWheel myWheel;
   cout << "Current position " << myWheel.getPosition() << endl;
 
   myWheel.turnLeft();
@@ -15,6 +14,5 @@ int main() {
 
   myWheel.straighten();
   cout << "Current position - " <<myWheel.getPosition() << endl;
-
   return 0;
 };

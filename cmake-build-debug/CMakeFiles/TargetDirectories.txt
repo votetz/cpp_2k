@@ -31,6 +31,12 @@ C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/tabulate/CMakeFil
 C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/entity_model/CMakeFiles/entity_model.dir
 C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/entity_model/CMakeFiles/edit_cache.dir
 C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/entity_model/CMakeFiles/rebuild_cache.dir
+C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/bits/CMakeFiles/bits.dir
+C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/bits/CMakeFiles/edit_cache.dir
+C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/bits/CMakeFiles/rebuild_cache.dir
+C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/zip_guard/CMakeFiles/zip_guard.dir
+C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/zip_guard/CMakeFiles/edit_cache.dir
+C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/zip_guard/CMakeFiles/rebuild_cache.dir
 C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/libs/CMakeFiles/edit_cache.dir
 C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/libs/CMakeFiles/rebuild_cache.dir
 C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/libs/complex/CMakeFiles/complex.dir

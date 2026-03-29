@@ -249,6 +249,15 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
+bits_BINARY_DIR:STATIC=C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/bits
+
+//Value Computed by CMake
+bits_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+bits_SOURCE_DIR:STATIC=C:/Users/Admin/CLionProjects/cpp_2k/projects/bits
+
+//Value Computed by CMake
 calculator_BINARY_DIR:STATIC=C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/calculator
 
 //Value Computed by CMake
@@ -256,6 +265,15 @@ calculator_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 calculator_SOURCE_DIR:STATIC=C:/Users/Admin/CLionProjects/cpp_2k/projects/calculator
+
+//Value Computed by CMake
+class_BINARY_DIR:STATIC=C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/friends_class
+
+//Value Computed by CMake
+class_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+class_SOURCE_DIR:STATIC=C:/Users/Admin/CLionProjects/cpp_2k/projects/friends_class
 
 //Value Computed by CMake
 complex-app_BINARY_DIR:STATIC=C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/complex_app
@@ -374,6 +392,15 @@ template_utils_IS_TOP_LEVEL:STATIC=OFF
 //Value Computed by CMake
 template_utils_SOURCE_DIR:STATIC=C:/Users/Admin/CLionProjects/cpp_2k/projects/template_utils
 
+//Value Computed by CMake
+zip_guard_BINARY_DIR:STATIC=C:/Users/Admin/CLionProjects/cpp_2k/cmake-build-debug/projects/zip_guard
+
+//Value Computed by CMake
+zip_guard_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+zip_guard_SOURCE_DIR:STATIC=C:/Users/Admin/CLionProjects/cpp_2k/projects/zip_guard
+
 
 ########################
 # INTERNAL cache entries
@@ -481,7 +508,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=14
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=16
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -4,8 +4,7 @@
 
 using namespace std;
 
-class steering_wheel {
-    private:
+class SteeringWheel {
     string position;
 
     public:

@@ -1,11 +1,12 @@
 cmake_minimum_required(VERSION 3.10)
-project(bits)
+project(zip_guard)
 
 include_directories(include)
 
 add_executable(${PROJECT_NAME}
-        include/bits.hpp
+        include/
         src/main.cpp
+        include/zip.hpp
 )
 
 set_target_properties(bits PROPERTIES
