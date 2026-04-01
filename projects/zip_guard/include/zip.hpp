@@ -35,4 +35,13 @@ ZipCountry(const std::string& name, const std::string& pat, int len): countryNam
     void set_length(int length) {
         this->length = length;
     }
+
+    [[nodiscard]] bool validate(const std::string& zip) const {
+    if ((int)zip.size() != length)
+        return false;
+    for (char c : zip)
+        if (!isdigit(c))
+            return false;
+    return true;
+}
 };

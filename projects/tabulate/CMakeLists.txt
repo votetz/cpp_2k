@@ -13,4 +13,6 @@ add_executable(${PROJECT_NAME} ${SRC}
         ../entity_model/src/entity_model.cpp
         ../entity_model/include/entity_model.hpp
         ../zip_guard/src/main.cpp
+        ../box_class/include/box_class.hpp
+        ../box_class/src/main.cpp
 )
