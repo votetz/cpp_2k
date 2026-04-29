@@ -15,4 +15,5 @@ add_executable(${PROJECT_NAME} ${SRC}
         ../zip_guard/src/main.cpp
         ../box_class/include/box_class.hpp
         ../box_class/src/main.cpp
+        ../bank_account_app/src/main.cpp
 )
