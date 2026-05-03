@@ -1,8 +1,6 @@
 ﻿cmake_minimum_required(VERSION 3.15)
 project(string_check)
-add_executable(${PROJECT_NAME} src/string_check.cpp
-        ../../libs/complex/src/complex.cpp
-)
+add_executable(${PROJECT_NAME} src/string_check.cpp)
 
 set_target_properties(${PROJECT_NAME} PROPERTIES
         RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/dist/bin/Windows/AMD64"
