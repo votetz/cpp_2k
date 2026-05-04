@@ -17,6 +17,6 @@ The repository is organized into **`libs`** (shared logic) and **`projects`** (e
 
 **1. Configure the project:**
 ```bash
-cmake -B build
+cmake -B build -G ninja
 
 ninja /build
