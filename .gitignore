@@ -367,3 +367,7 @@ cmake-*
 .vs
 build
 dist
+
+# SSH CLion configuration files
+ssh clion
+ssh clion.pub
