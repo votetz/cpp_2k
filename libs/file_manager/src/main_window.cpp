@@ -9,6 +9,8 @@
 #include <QDesktopServices>
 #include <QUrl>
 #include <QHeaderView>
+#include <QLoggingCategory>
+#include <QAction>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent),
@@ -21,6 +23,37 @@ MainWindow::MainWindow(QWidget *parent)
       splitter(new QSplitter(Qt::Horizontal, this)),
       previewWidget(new QWidget(this)),
       currentContextMenuIndex() {
+
+    QLoggingCategory::setFilterRules("qt.qpa.wayland.textinput=false");
+
+    newFileAction = new QAction("New File", this);
+    connect(newFileAction, &QAction::triggered, this, &MainWindow::createNewFile);
+
+    newFolderAction = new QAction("New Folder", this);
+    connect(newFolderAction, &QAction::triggered, this, &MainWindow::createNewFolder);
+
+    copyAction = new QAction(tr("&Copy"), this);
+    copyAction->setShortcut(QKeySequence::Copy);
+    connect(copyAction, &QAction::triggered, this, &MainWindow::copyItem);
+    this->addAction(copyAction);
+
+    pasteAction = new QAction(tr("&Paste"), this);
+    pasteAction->setShortcut(QKeySequence::Paste);
+    connect(pasteAction, &QAction::triggered, this, &MainWindow::pasteItem);
+    this->addAction(pasteAction);
+
+    renameAction = new QAction("Rename", this);
+    renameAction->setShortcut(QKeySequence(Qt::Key_F2));
+    connect(renameAction, &QAction::triggered, this, &MainWindow::renameItem);
+    this->addAction(renameAction);
+
+    deleteAction = new QAction("Delete", this);
+    deleteAction->setShortcut(QKeySequence::Delete);
+    connect(deleteAction, &QAction::triggered, this, &MainWindow::deleteItem);
+    this->addAction(deleteAction);
+
+    m_file_executor = new FileExecutor(this);
+
     setupUi();
 }
 
@@ -91,18 +124,25 @@ void MainWindow::onTreeViewCustomContextMenu(const QPoint &pos) {
     currentContextMenuIndex = index;
 
     QMenu contextMenu(this);
-    contextMenu.addAction("New File", this, &MainWindow::createNewFile);
-    contextMenu.addAction("New Folder", this, &MainWindow::createNewFolder);
+
+    contextMenu.addAction(newFileAction);
+    contextMenu.addAction(newFolderAction);
+
+    if (m_file_executor->has_copy_source()) {
+        contextMenu.addAction(pasteAction);
+    }
 
     if (index.isValid()) {
         contextMenu.addSeparator();
-        contextMenu.addAction("Rename", this, &MainWindow::renameItem);
-        contextMenu.addAction("Delete", this, &MainWindow::deleteItem);
+
+        contextMenu.addAction(copyAction);
+
+        contextMenu.addAction(renameAction);
+        contextMenu.addAction(deleteAction);
     }
 
     contextMenu.exec(treeView->viewport()->mapToGlobal(pos));
 }
-
 void MainWindow::onSelectionChanged(const QItemSelection &selected, const QItemSelection &deselected) {
     Q_UNUSED(deselected);
 
@@ -140,12 +180,9 @@ void MainWindow::createNewFile() {
     QString fileName = QInputDialog::getText(this, "New File", "Enter file name:", QLineEdit::Normal, "", &ok);
 
     if (ok && !fileName.isEmpty()) {
-        QString fullPath = dirPath + "/" + fileName;
-        QFile file(fullPath);
-        if (file.open(QIODevice::WriteOnly)) {
-            file.close();
-        } else {
-            QMessageBox::warning(this, "Error", "Could not create file.");
+        QString error = m_file_executor->create_new_file(dirPath, fileName);
+        if (!error.isEmpty()) {
+            QMessageBox::warning(this, "Error", error);
         }
     }
 }
@@ -163,9 +200,9 @@ void MainWindow::createNewFolder() {
     QString folderName = QInputDialog::getText(this, "New Folder", "Enter folder name:", QLineEdit::Normal, "", &ok);
 
     if (ok && !folderName.isEmpty()) {
-        QDir dir(dirPath);
-        if (!dir.mkdir(folderName)) {
-            QMessageBox::warning(this, "Error", "Could not create folder.");
+        QString error = m_file_executor->create_new_folder(dirPath, folderName);
+        if (!error.isEmpty()) {
+            QMessageBox::warning(this, "Error", error);
         }
     }
 }
@@ -177,15 +214,14 @@ void MainWindow::renameItem() {
 
     QModelIndex sourceIndex = proxyModel->mapToSource(currentContextMenuIndex);
     QString oldPath = fileSystemModel->filePath(sourceIndex);
-    QFileInfo fileInfo(oldPath);
 
     bool ok;
-    QString newName = QInputDialog::getText(this, "Rename", "Enter new name:", QLineEdit::Normal, fileInfo.fileName(), &ok);
+    QString newName = QInputDialog::getText(this, "Rename", "Enter new name:", QLineEdit::Normal, QFileInfo(oldPath).fileName(), &ok);
 
-    if (ok && !newName.isEmpty() && newName != fileInfo.fileName()) {
-        QString newPath = fileInfo.absolutePath() + "/" + newName;
-        if (!QFile::rename(oldPath, newPath)) {
-            QMessageBox::warning(this, "Error", "Could not rename item.");
+    if (ok && !newName.isEmpty()) {
+        QString error = m_file_executor->rename_item(oldPath, newName);
+        if (!error.isEmpty()) {
+            QMessageBox::warning(this, "Error", error);
         }
     }
 }
@@ -197,23 +233,39 @@ void MainWindow::deleteItem() {
 
     QModelIndex sourceIndex = proxyModel->mapToSource(currentContextMenuIndex);
     QString filePath = fileSystemModel->filePath(sourceIndex);
-    QFileInfo fileInfo(filePath);
 
     QMessageBox::StandardButton reply = QMessageBox::question(
-        this, "Delete", "Are you sure you want to delete \"" + fileInfo.fileName() + "\"?",
+        this, "Delete", "Are you sure you want to delete \"" + QFileInfo(filePath).fileName() + "\"?",
         QMessageBox::Yes | QMessageBox::No);
 
     if (reply == QMessageBox::Yes) {
-        if (fileInfo.isDir()) {
-            QDir dir(filePath);
-            if (!dir.removeRecursively()) {
-                QMessageBox::warning(this, "Error", "Could not delete folder.");
-            }
-        } else {
-            if (!QFile::remove(filePath)) {
-                QMessageBox::warning(this, "Error", "Could not delete file.");
-            }
+        QString error = m_file_executor->delete_item(filePath);
+        if (!error.isEmpty()) {
+            QMessageBox::warning(this, "Error", error);
         }
+    }
+}
+
+void MainWindow::copyItem() {
+    if (!currentContextMenuIndex.isValid()) {
+        return;
+    }
+    QModelIndex sourceIndex = proxyModel->mapToSource(currentContextMenuIndex);
+    QString filePath = fileSystemModel->filePath(sourceIndex);
+    m_file_executor->set_copy_source(filePath);
+}
+
+void MainWindow::pasteItem() {
+    if (!currentContextMenuIndex.isValid()) {
+        return;
+    }
+    QModelIndex sourceIndex = proxyModel->mapToSource(currentContextMenuIndex);
+    QString targetDirPath = fileSystemModel->isDir(sourceIndex)
+                                ? fileSystemModel->filePath(sourceIndex)
+                                : fileSystemModel->fileInfo(sourceIndex).absolutePath();
+    QString error = m_file_executor->paste(targetDirPath);
+    if (!error.isEmpty()) {
+        QMessageBox::warning(this, "Error", error);
     }
 }
 
@@ -243,6 +295,7 @@ void MainWindow::updatePreview(const QString &filePath) {
         }
     }
 }
+
 
 void MainWindow::clearPreview() {
     textPreview->clear();

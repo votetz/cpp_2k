@@ -12,10 +12,12 @@ find_package(Qt6 REQUIRED COMPONENTS Core Widgets Gui)
 
 set(SOURCES
     ${CMAKE_CURRENT_SOURCE_DIR}/src/main_window.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/file_executor.cpp
 )
 
 set(HEADERS
     ${CMAKE_CURRENT_SOURCE_DIR}/include/main_window.hpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/file_executor.hpp
 )
 
 add_library(file_manager STATIC ${SOURCES} ${HEADERS})

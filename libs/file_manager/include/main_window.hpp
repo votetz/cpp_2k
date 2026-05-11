@@ -10,6 +10,8 @@
 #include <QSplitter>
 #include <QVBoxLayout>
 #include <QMenu>
+#include <QAction>
+#include "file_executor.hpp"
 
 class MainWindow : public QMainWindow {
     Q_OBJECT
@@ -27,12 +29,22 @@ private slots:
     void createNewFolder();
     void renameItem();
     void deleteItem();
+    void copyItem();
+    void pasteItem();
 
 private:
     void setupUi();
     void updatePreview(const QString &filePath);
     void clearPreview();
 
+    FileExecutor* m_file_executor;
+    QAction *newFileAction;
+    QAction *newFolderAction;
+    QAction *copyAction;
+    QAction *pasteAction;
+    QAction *renameAction;
+    QAction *deleteAction;
+    QLabel *currentPathLabel;
     QTreeView *treeView;
     QFileSystemModel *fileSystemModel;
     QSortFilterProxyModel *proxyModel;

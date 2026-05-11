@@ -17,9 +17,6 @@ double Point3D::get_z() const {
     return z_;
 }
 
-
-
-
 double Point3D::distance(const Point3D& other) const {
     return std::hypot(x_ - other.x_, y_ - other.y_, z_ - other.z_);
 }
