@@ -11,6 +11,7 @@ The repository is organized into **`libs`** (shared logic) and **`projects`** (e
 ## 🛠 **REQUIREMENTS**
 * **C++20 compiler** (GCC, Clang, or MSVC)
 * **CMake 3.10+**
+* **Qt 5.15+** (for GUI projects) 
 ---
 
 ## ⚙️ **INSTALLATION & BUILD**
